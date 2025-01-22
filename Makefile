@@ -29,7 +29,7 @@ ASYNC_JOB_SCRIPT_NAME = run_$(SERVICE_CAPS)_async_job.sh
 default: compile-kb-module
 
 compile-kb-module:
-	kb-mobu compile $(SPEC_FILE) \
+	kb-sdk compile $(SPEC_FILE) \
 		--out $(LIB_DIR) \
 		--plclname Bio::KBase::$(SERVICE_CAPS)::Client \
 		--jsclname javascript/Client \
